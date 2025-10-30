@@ -8,6 +8,7 @@ import WatchlistPanel from '../components/WatchlistPanel';
 import { 
   appReducer, 
   initialState,
+  initializeState,
   FETCH_INIT,
   FETCH_SUCCESS,
   FETCH_FAILURE,
@@ -21,7 +22,7 @@ import {
 import './Home.css';
 
 const Home = () => {
-  const [state, dispatch] = useReducer(appReducer, initialState);
+  const [state, dispatch] = useReducer(appReducer, initialState, initializeState);
 
   const fetchShows = useCallback(async (searchQuery) => {
     dispatch({ type: FETCH_INIT });

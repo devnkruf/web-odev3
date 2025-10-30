@@ -33,9 +33,17 @@ export const initialState = {
     language: '',
     minRating: 0
   },
-  watchlist: loadWatchlist(),
+  watchlist: [],
   pageSize: 6,
   currentPage: 1
+};
+
+// Initialize state with localStorage
+export const initializeState = (initialState) => {
+  return {
+    ...initialState,
+    watchlist: loadWatchlist()
+  };
 };
 
 // Reducer function
