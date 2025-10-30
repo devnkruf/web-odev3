@@ -1,0 +1,275 @@
+.show-detail {
+  min-height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.detail-container {
+  padding: 2rem;
+}
+
+.detail-main {
+  max-width: 100%;
+}
+
+.detail-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 3rem;
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.detail-back-wrapper {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.detail-back-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #2a2a2a;
+  color: #6b9bd1;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.detail-back-button:hover {
+  background-color: #333;
+  border-color: #6b9bd1;
+  color: #8bb4e0;
+}
+
+.detail-content-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.detail-poster {
+  flex-shrink: 0;
+}
+
+.detail-poster img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.no-poster-detail {
+  width: 250px;
+  height: 375px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 1rem;
+}
+
+.detail-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.detail-info h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.detail-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.genre-badge {
+  background-color: #3a5a7a;
+  color: #e3f2fd;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: none;
+}
+
+.language-badge {
+  background-color: #4a3a5a;
+  color: #f3e5f5;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: none;
+}
+
+.rating-badge {
+  background-color: #5a4a2a;
+  color: #ffd700;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+}
+
+.status-badge {
+  background-color: #3a5a3a;
+  color: #a8e6a3;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: none;
+}
+
+.date-badge {
+  background-color: #5a3a3a;
+  color: #ffcdd2;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: none;
+}
+
+.detail-description {
+  margin-top: 1rem;
+}
+
+.detail-description p {
+  line-height: 1.7;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.episodes-section {
+  margin-top: 2rem;
+}
+
+.episodes-section h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.no-episodes {
+  color: #888;
+  font-style: italic;
+  padding: 1rem;
+}
+
+.episodes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.episode-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.episode-item:hover {
+  background-color: #333;
+}
+
+.episode-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.episode-season {
+  color: #999;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.episode-separator {
+  color: #666;
+}
+
+.episode-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.episode-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.episode-meta {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.episode-source-btn {
+  color: #6b9bd1;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.episode-source-btn:hover {
+  border-color: #6b9bd1;
+  background-color: rgba(107, 155, 209, 0.1);
+}
+
+.loading,
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #333;
+  border-top: 4px solid #4a9eff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .detail-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .detail-info h1 {
+    font-size: 1.8rem;
+  }
+}

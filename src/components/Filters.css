@@ -1,0 +1,40 @@
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.filter-group label {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.filter-select {
+  padding: 0.75rem 1rem;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  min-width: 160px;
+  transition: border-color 0.3s;
+}
+
+.filter-select:hover,
+.filter-select:focus {
+  border-color: #4a9eff;
+}
+
+.filter-select option {
+  background-color: #2a2a2a;
+  color: #fff;
+}
